@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<flow name="pipeline-testFlow" doc:id="a939ad58-5c4c-47c8-9255-07ee02adfb80" >
+		<scheduler doc:name="Scheduler" doc:id="4ed22d33-5b7e-4275-b89b-1fdd3a7a73f6" >
+			<scheduling-strategy >
+				<fixed-frequency />
+			</scheduling-strategy>
+		</scheduler>
+		<set-payload value="#[{message:1,message:2,message:3,message:4}]" doc:name="Set Payload" doc:id="bc0609cb-1578-4207-aeec-5efb68144428" />
+		<logger level="INFO" doc:name="Logger" doc:id="11267b72-6717-4421-a4ae-4266323fe483" message="#[payload]"/>
+	</flow>
+</mule>
