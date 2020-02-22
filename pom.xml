@@ -36,7 +36,6 @@
 						<workers>1</workers>
 						<objectStoreV2>true</objectStoreV2>
 						<workerType>Micro</workerType>
-						
 						<region>us-west-2</region>
 						<businessGroup>Bus1</businessGroup>
 						<businessGroupId>93c652ed-a2af-4272-96de-e8d46b8e4dfb</businessGroupId>
